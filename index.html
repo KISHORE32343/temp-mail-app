@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temporary Mail</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📧 Your Temporary Email</h1>
+    <div class="email-box" id="email">loading@email.com</div>
+    
+    <button onclick="copyEmail()">📋 Copy Email</button>
+    <button onclick="generateEmail()">🔄 New Email</button>
+    <button onclick="extendTimer()">⏱️ Extend 1 Min</button>
+    <button onclick="addTestMessage()">📩 Test Message</button>
+
+    <div class="timer-box">
+      <p>Expires in: <span id="timer">10</span> minutes</p>
+    </div>
+
+    <h2>📥 Inbox</h2>
+    <div id="inbox" class="inbox">
+      <p>Loading inbox...</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
